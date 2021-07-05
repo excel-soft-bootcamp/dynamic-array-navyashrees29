@@ -25,10 +25,11 @@ namespace DynamicArrayProgram
             {
                 if (index >= buffer.Length)
                 {
-                    Array.Resize(ref buffer, index + 5);
+                    //   Array.Resize(ref buffer, index + 5);
+
+                    ArrayUtility.Resize(ref buffer, index + 5);
                 }
-                
-                buffer[index] = value;
+                    buffer[index] = value;
             }
             get
             {
